@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Absensi Karyawan</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      padding: 0;
+      background-color: #f4f4f9;
+    }
+
+    .container {
+      background: #ffffff;
+      padding: 20px;
+      margin: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      color: #333333;
+      margin-bottom: 10px;
+      font-family: 'Trebuchet MS', Arial, sans-serif;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .table-container {
+      overflow-x: auto;
+      margin-top: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      text-align: center;
+      padding: 8px;
+    }
+
+    th {
+      background-color: #007BFF;
+      color: white;
+    }
+
+    button {
+      padding: 5px 10px;
+      margin: 2px;
+      border: none;
+      background-color: #007BFF;
+      color: white;
+      cursor: pointer;
+      font-size: 12px;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .penghasilan-container {
+      margin-top: 20px;
+    }
+
+    .penghasilan {
+      background-color: #ffffff;
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+    }
+
+    .penghasilan h3 {
+      margin-top: 0;
+      font-size: 16px;
+    }
+
+    @media (max-width: 768px) {
+      table {
+        font-size: 12px;
+      }
+
+      button {
+        font-size: 10px;
+      }
+
+      th, td {
+        padding: 5px;
+      }
+
+      h1 {
+        font-size: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      th, td {
+        font-size: 10px;
+        padding: 3px;
+      }
+
+      button {
+        font-size: 8px;
+      }
+
+      h1 {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Interior Acho & Fatah</h1>
+
+    <h2>Kerja Hari Ini</h2>
+    <div class="table-container">
+      <table id="absensi-table">
+        <!-- Tabel Absensi akan diisi oleh JavaScript -->
+      </table>
+    </div>
+
+    <div class="penghasilan-container">
+      <h2>Penghasilan Karyawan</h2>
+      <div id="penghasilan-container">
+        <!-- Data penghasilan akan diisi oleh JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
